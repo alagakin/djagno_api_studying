@@ -1,0 +1,9 @@
+<h1>All Books</h1>
+<hr>
+{% for book in books %}
+    <p>Title: {{ book.title }}</p>
+    <p>Subtitle: {{ book.subtitle }}</p>
+    <p>Author: <b>{{ book.author }}</b></p>
+    <p>ISBN: {{ book.isbn }}</p>
+    <hr>
+{% endfor %}
